@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+body{
+font-family: 'Heebo', sans-serif;
+background-color: #0A1418;
+}
+h1{
+  font-family: 'Fjalla One', sans-serif;
+}
+h2{
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 4px;
+}
+h3{
+  font-family: 'Heebo' sans-serif;
+  font-weight: 300;
+}
+
+p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9B9B9B;
+}
+
+.body{
+  font-family: ;
+  background-color:#0A1418;
+}
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  transition: background-color .5s ease;
+  z-index: 1000;
+
+}
+
+
+/*
+-------------
+NAV BAR
+-------------
+*/
+
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  /* background-color:#0A1418; */
+  color: grey;
+  padding-right: 1.5rem;
+  padding-left: 5%;
+
+}
+.logo{
+  display: flex;
+  flex: start;
+}
+
+.logo img{
+  width:auto;
+  height:25px;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+font-family: 'Heebo', sans-serif;
+font-weight: 400;
+font-variant: small-caps;
+font-size: 16.5px;
+letter-spacing: 1.2px;
+  list-style:none;
+
+}
+
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.links::after{
+  background-color: #1B2428;
+  font-weight: bold;
+}
+
+.links:hover{
+  font-weight: bold;
+  background-color: #1B2428;
+}
+
+.toggle-button{
+  position: absolute;
+  top:0.75rem;
+  right:1.75rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height:2px;
+  width:100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color:#0A1418;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .navbar{
+
+}
+
+.scrolling-active .navbar a{
+    color: #fff;
+}
+
+.scrolling-active #nav-cta{
+    background-color: #313131;
+    color: #fff;
+}
+
+.scrolling-active #nav-cta:hover{
+    background-color: #151515;
+}
+
+.scrolling-active .nav-link::after{
+    background-color: #313131;
+}
+/*
+------------------------------
+Hero Container
+------------------------------
+ */
+
+
+#myVideo {
+  object-fit: cover;
+  top:0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.hero-container{
+  height: 100vh;
+  width: 100%;
+  background-color: #0D1113;
+  background-image: url('Assets/video/miami-pan-1080.mov');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+     top: 45%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   vertical-align: middle;
+  color: white;
+  width: 90vw;
+   letter-spacing: 6px;
+}
+.hero-bottom-info{
+  width: 100%;
+  height:100vh;
+  top:0vh;
+  left:0vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+
+}
+.hero-text h3{
+font-variant: small-caps;
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+  letter-spacing: 3px;
+  font-weight: 300;
+  padding-top:20px;
+  margin-bottom: -0.3px;
+  letter-spacing: 5px;
+  color: white;
+
+
+}
+.hero-text h1{
+    font-size: calc(45px + 6 * ((100vw - 320px) / 680));
+}
+
+.header-text-ava{
+  display: inline-flex;
+}
+.line1{
+  margin-top: 35px;
+  margin-right: 15px;
+  width: 35px;
+  height: 3px;
+  background-color: #FF4D4D;
+}
+
+.line2{
+  margin-top: 35px;
+  margin-left: 15px;
+  width: 35px;
+  height: 3px;
+  background-color: #FF4D4D;
+}
+
+/*
+---------------
+What sets us apart section
+----------------
+*/
+.mid-section-container{
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #0D1113;
+  color: #C5C5C5;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 3%;
+
+}
+.line{
+  margin-top: 10px;
+  margin-right: 15px;
+  width: 35px;
+  height: 3px;
+  background-color: #FF4D4D;
+}
+.line3{
+  margin-top: 27px;
+  margin-right: 15px;
+  width: 35px;
+  height: 3px;
+  background-color: #FF4D4D;
+}
+.header-mid{
+  display: inline-flex;
+}
+.header-mid h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.stats-cont{
+  padding-top: 12%;
+  padding-left: 15%;
+  margin-left: 10%;
+}
+.stats-cont h4{
+  margin-bottom: 0;
+  font-family: 'Heebo' sans-serif;
+  font-weight:500;
+  font-size: 14.5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*
+------------
+Our practice section
+------------
+*/
+.prac-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.prac-cont1{
+  display: inline-flex;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.our-practices-cont{
+  width: 100%;
+  height:640px;
+  background-color: #1D262A;
+  color: #C5C5C5;
+  padding-top:2%;
+}
+.header-bar{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  padding-right: 5%;
+}
+.header-bar h4{
+  display: flex;
+  font-size: 20px;
+  padding-right: 15px;
+  font-family: 'Fjalla One', cursive;
+  letter-spacing: 3px;
+
+}
+.header-bar a {
+  text-decoration: none;
+  color:white;
+  font-family: 'Heebo' sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+
+
+
+/*
+------------------------------
+ Our practice blocks
+ -----------------------------
+ */
+.practice-blocks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+width:100%;
+height: 300px;
+background-color: #273034;
+left: 0 !important ;
+right: 0 !important ;
+}
+
+.prac-blocks{
+  padding-top: 70px;
+  padding-left: 35px;
+  padding-right: 50px;
+}
+.prac-blocks a{
+  text-decoration: none;
+  color: white;
+}
+.practice-blocks h5{
+  font-family: 'Heebo' sans-serif;
+  font-weight:500;
+  font-size: 14.5px;
+  letter-spacing: 1px;
+}
+
+.bkg-clr1{
+  background-color: #273034;
+}
+.bkg-clr1:hover{
+    background-color: #424C50
+}
+.bkg-clr2{
+  background-color: #222B2F;
+}
+.bkg-clr2:hover{
+    background-color: #424C50;
+}
+.bkg-clr3{
+  background-color: #1B2428;
+}
+.bkg-clr3:hover{
+    background-color: #424C50;
+}
+.bkg-clr4{
+  background-color: #162024;
+}
+.bkg-clr4:hover{
+    background-color: #424C50;
+}
+
+.prac-banner{
+  width:100%;
+  height: 250px;
+  background-image: url('Assets/Images/banner-4copy.jpg');
+  background-size:cover;
+
+}
+
+/*
+------------------------------
+Contact section
+------------------------------
+ */
+.contact-cont{
+  display: grid;
+  margin-right: 1%;
+  width: 100%;
+  height:450px;
+  grid-template-columns: 1fr 1fr;
+background-color:#0A1418;
+  color: #C5C5C5;
+
+}
+
+.contact-info-cont{
+display: grid;
+grid-template-columns: 1fr;
+  width: 100%;
+  height: 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.con-text{
+  display: grid;
+  grid-column-start: 1;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5%;
+    width: 100%;
+    height: 65%;
+}
+
+.con-text h5{
+  font-family: 'Heebo' sans-serif;
+  font-weight:500;
+  font-size: 14.5px;
+  letter-spacing: 1px;
+
+}
+.info2{
+  grid-column-start: 2;
+}
+.map-style iframe{
+border-radius: 10px;
+margin-top: 5%;
+margin-right: 5%;
+}
+
+/*
+------------------------------
+Footer section
+------------------------------
+ */
+.footer-nav{
+  display:inline-flex;
+  bottom: 0;
+  height:100px;
+  width: 100%;
+  background-color: #0A1418;
+  z-index: 100;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.text{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 50px;
+  color: grey;
+}
+.icons{
+  width: auto;
+  height:30px;
+  margin-left: 5px;
+}
+
+.social-icons{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*
+------------------------------
+Responsive section
+------------------------------
+*/
+
+@media (max-width:800px){
+  header{
+     background-color:#0A1418;
+  }
+  .logo{
+z-index: 1000;
+  }
+  .toggle-button{
+    display: flex;
+    z-index: 1000;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+
+  }
+  .navbar-links li{
+
+  }
+  .navbar-links li a{
+    padding: 1.5rem 1rem;
+
+  }
+
+  .navbar-links.active{
+  display: flex;
+  padding-top: 3em;
+  position: fixed;
+  text-align: center;
+  background-color:#0A1418;
+
+  }
+
+  .mid-section-container{
+    height: 550px;
+    grid-template-columns: 1fr;
+  }
+.prac-blocks{
+  padding-top: 30px;
+}
+.contact-cont{
+  grid-template-columns: 1fr;
+  height:450px;
+}
+
+  .header-cont{
+    height: 200px;
+  }
+
+  .practice-blocks{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  .contact-info-cont{
+    grid-template-columns: 1fr;
+      grid-template-rows: 140px 100px;
+      height: 300px;
+  }
+
+  .stats-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .stats-cont{
+    padding-left: 1%;
+    margin-left: 1%;
+  }
+
+  .stats-cont h4{
+    font-size: 2.3vw;
+  }
+
+  p{
+   font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .map-style iframe{
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 100%;
+  border-radius: 0;
+  height:300px;
+  }
+.map-info{
+  height: 200px;
+}
+
+.footer-nav{
+  display: flex;
+  margin-top: 150px;
+}
+
+
+}
+
+@media (max-width:500px){
+
+  p{
+    font-size: 2.8vw;
+  }
+  .stats-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40%;
+  }
+  .stats-cont h4{
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
+  .header-cont{
+    height: 230px;
+  }
+  .mid-section-container{
+    height: 630px;
+
+  }
+  .footer-nav{
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+}

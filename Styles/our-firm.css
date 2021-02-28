@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#0A1418;
+}
+p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9B9B9B;
+}
+
+/*
+NAV BAR
+*/
+header{
+  position: fixed;
+  z-index: 10000;
+
+}
+.navbar{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D181E;
+  color: #DEDEDE;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+}
+
+.logo{
+  display: flex;
+  flex: start;
+  height: 50px;
+  padding-left:  15%;
+}
+
+.logo img{
+  margin-top: 10px;
+  width:auto;
+  height:25px;
+
+
+}
+
+.navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+font-family: 'Heebo', sans-serif;
+font-weight: 400;
+font-variant: small-caps;
+font-size: 16px;
+letter-spacing: 1.2px;
+  list-style:none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+  background-color: #1B2428;
+  font-weight: bold;
+}
+.navbar-links li a:hover{
+  font-weight: bold;
+}
+
+.toggle-button{
+  position: absolute;
+  top:1.5rem;
+  right:1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height:2px;
+  width:100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+
+
+/*
+Intro Banner
+*/
+
+.Intro-banner{
+  background-image: url('../Assets/Images/banner-4.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 15.75em;
+}
+
+.text-banner{
+  margin-left: 5%;
+  top:22%;
+  bottom: 65%;
+  position:absolute;
+  height: 30px;
+  border-left: 5px solid red;
+  width: 100%;
+  z-index: 10;
+}
+.text-banner h2{
+  font-family: 'Fjalla One', cursive;
+  letter-spacing: 4px;
+  color: white;
+  padding-left: 1%;
+  text-transform: uppercase;
+
+}
+.firm-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.firm-values{
+  width: 100%;
+  height:600px;
+  padding-top: 6%;
+  padding-left: 8%;
+  padding-right: 10%;
+  color:white;
+}
+
+.header-mid h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.stats-cont{
+  padding-top: 15%;
+  margin-left: 10%;
+}
+.stats-cont h4{
+  font-family: 'Heebo' sans-serif;
+  font-weight:500;
+  font-size: 14.5px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/*
+------------------------------
+Footer section
+------------------------------
+ */
+.footer-nav{
+  display:inline-flex;
+  bottom: 0;
+  height:100px;
+  width: 100%;
+  background-color: #0A1418;
+  z-index: 100;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.text{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 50px;
+  color: grey;
+}
+.icons{
+  width: auto;
+  height:30px;
+  margin-left: 5px;
+}
+
+.social-icons{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*
+------------------------------
+Responsive section
+------------------------------
+*/
+@media (max-width:800px){
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+  }
+  .navbar-links li a{
+    padding: 1.5rem 1rem;
+  }
+
+  .navbar-links.active{
+display: flex;
+  }
+  .firm-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 45%;
+  }
+  .firm-values{
+    padding-right: 10%;
+
+  }
+  .stats-cont{
+    display: grid;
+    margin-top: 2%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30%;
+
+}
+@media (max-width:700px){
+  .firm-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 60%;
+  }
+
+@media (max-width:500px){
+  .firm-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 65%;
+  }
+
+    .firm-values{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+}

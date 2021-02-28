@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#0A1418;
+}
+h2{
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 4px;
+  color: white;
+}
+h3{
+  font-family: 'Heebo' sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px
+}
+h4{
+
+}
+p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9B9B9B;
+}
+/*
+NAV BAR
+*/
+header{
+  position: fixed;
+  z-index: 10000;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D181E;
+  color: #DEDEDE;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.logo{
+  display: flex;
+  flex: start;
+  height: 50px;
+  padding-left:  15%;
+}
+
+.logo img{
+  margin-top: 10px;
+  width:auto;
+  height:25px;
+
+
+}
+.navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+font-family: 'Heebo', sans-serif;
+font-weight: 400;
+font-variant: small-caps;
+font-size: 16px;
+letter-spacing: 1.2px;
+  list-style:none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+  background-color: #1B2428;
+  font-weight: bold;
+}
+.navbar-links li a:hover{
+  font-weight: bold;
+}
+
+.toggle-button{
+  position: absolute;
+  top:1.5rem;
+  right:1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height:2px;
+  width:100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+
+/*
+Intro Banner
+*/
+
+.Intro-banner{
+  background-image: url('../Assets/Images/banner-3.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 15.75em;
+}
+
+.text-banner{
+  top:22%;
+  margin-left: 5%;
+  bottom: 65%;
+  position:absolute;
+  height: 30px;
+  border-left: 5px solid red;
+  width: 100%;
+}
+.text-banner h2{
+  font-family: 'Fjalla One', cursive;
+  letter-spacing: 4px;
+  color: white;
+  padding-left: 1%;
+  text-transform: uppercase;
+
+}
+/*
+Infor Blocks
+*/
+.info-blocks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+
+.block{
+  width: 100%;
+  text-align: center;
+  padding: 5% 15%;
+}
+.info1{
+  background-color: #273034;
+}
+.info2{
+  background-color: #222B2F;
+}
+.info3{
+  background-color: #1F282C;
+}
+
+
+.practice-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
+}
+
+.block1{
+  padding: 5% 5%;
+}
+
+
+/*
+------------------------------
+Footer section
+------------------------------
+ */
+.footer-nav{
+  display:inline-flex;
+  bottom: 0;
+  height:100px;
+  width: 100%;
+  background-color: #0A1418;
+  z-index: 100;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.text{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 50px;
+  color: grey;
+}
+.icons{
+  width: auto;
+  height:30px;
+  margin-left: 5px;
+}
+
+.social-icons{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*
+------------------------------
+Responsive section
+------------------------------
+*/
+
+@media (max-width:800px){
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+  }
+  .navbar-links li a{
+    padding: 1.5rem 1rem;
+  }
+
+  .navbar-links.active{
+display: flex;
+  }
+
+  .practice-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 5%;
+  }
+}

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#0A1418;
+  color: white;
+}
+h3{
+  font-family: 'Heebo' sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 20px
+}
+p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9B9B9B;
+}
+/*
+NAV BAR
+*/
+header{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+
+}
+.navbar{
+  width:100%;
+  z-index: 1000;
+  position: fixed;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D181E;
+  color: #DEDEDE;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.logo{
+  display: flex;
+  flex: start;
+  height: 50px;
+  padding-left:  15%;
+}
+
+.logo img{
+  margin-top: 10px;
+  width:auto;
+  height:25px;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+font-family: 'Heebo', sans-serif;
+font-weight: 400;
+font-variant: small-caps;
+font-size: 16px;
+letter-spacing: 1.2px;
+  list-style:none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+  background-color: #1B2428;
+  font-weight: bold;
+}
+.navbar-links li a:hover{
+  font-weight: bold;
+}
+
+.toggle-button{
+  position: absolute;
+  top:1.5rem;
+  right:1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height:2px;
+  width:100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+/*
+Intro Banner
+*/
+
+.Intro-banner{
+  background-image: url('../Assets/Images/miami-banner.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 15.75em;
+}
+
+.text-banner{
+  margin-left: 5%;
+  top:22%;
+  bottom: 65%;
+  position:absolute;
+  height: 30px;
+  border-left: 5px solid red;
+  width: 100%;
+}
+.text-banner h2{
+  font-family: 'Fjalla One', cursive;
+  letter-spacing: 4px;
+  color: white;
+  padding-left: 1%;
+  text-transform: uppercase;
+
+}
+
+
+/*
+Main container
+*/
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 0.95fr 1fr;
+  column-gap: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+/*
+Contact info section
+*/
+
+.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info-1{
+  background-color: #273034;
+  padding:5%;
+}
+.info-2{
+  background-color: #222B2F;
+    padding:5%;
+}
+
+.client-login{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height:15%;
+  background-color: #222B2F;
+  padding: 5%;
+  margin-top: 2%;
+  border-radius: 0.4em;
+  padding-left:  20%;
+  padding-right: 20%;
+}
+
+.client-login p{
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+.client-login button{
+  width: 100%;
+  padding: 5px;
+  color: white;
+  border: 1.5px solid white;
+  background-color: transparent;
+  border-radius: 0.3em;
+
+}
+.client-login button:hover{
+  background-color: white;
+  color:black;
+}
+.intro-text-form{
+  margin: 5%;
+}
+.form-field{
+  width: 100%;
+  align-content: center;
+  background-color:#141D21;
+  border-radius: 1em;
+  justify-content: center;
+
+}
+.input1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.input1 input{
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #222B2F;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #222B2F;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.input2{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.input2 input{
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #222B2F;
+  margin: 8px 0;
+  display: inline-block;
+    border: 2px solid #222B2F;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-bttn{
+  width: 80%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  color: #07252C;
+  padding: 10px 20px;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 5%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-bttn:hover {
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 250px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #222B2F;
+  border-radius: 4px;
+  background-color: #222B2F;
+  font-size: 16px;
+  color: grey;
+  resize: none;
+}
+
+/*
+------------------------------
+Footer section
+------------------------------
+ */
+.footer-nav{
+  display:inline-flex;
+  bottom: 0;
+  height:100px;
+  width: 100%;
+  background-color: #0A1418;
+  z-index: 100;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.text{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 50px;
+  color: grey;
+}
+.icons{
+  width: auto;
+  height:30px;
+  margin-left: 5px;
+}
+
+.social-icons{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*
+------------------------------
+Responsive section
+------------------------------
+*/
+@media (max-width:800px){
+  .contact-container{
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+  }
+  .navbar-links li a{
+    padding: 1.5rem 1rem;
+  }
+
+  .navbar-links.active{
+display: flex;
+  }
+}
+@media (max-width:500px){
+
+}
