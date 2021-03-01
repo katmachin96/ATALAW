@@ -49,6 +49,27 @@ header{
   width:auto;
   height:25px;
 }
+.links::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width .3s;
+}
+
+.links:hover::after{
+  width: 100%;
+  font-weight: bold;
+  background-color: #fff;
+  transition: width .3s;
+}
+.active-link {
+  font-weight: 600;
+}
+.unactive-link{
+  font-weight: 300;
+}
 
 .navbar-links ul{
   margin:0;
@@ -230,6 +251,14 @@ margin-top: 20%;
   footer{
  margin-top: 80%;
   }
+  .links:hover::after{
+    width: 0%;
+    font-weight: bold;
+    transition: width .3s;
+  }
+    .links:hover{
+      background-color: #424C50;
+    }
   .toggle-button{
     display: flex;
   }
