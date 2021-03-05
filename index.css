@@ -11,14 +11,19 @@ background-color: #0A1418;
 }
 h1{
   font-family: 'Fjalla One', sans-serif;
+
+
 }
 h2{
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 4px;
+
 }
 h3{
   font-family: 'Heebo' sans-serif;
   font-weight: 300;
+  color:#FF4D4D;
+
 }
 
 p{
@@ -105,7 +110,7 @@ letter-spacing: 1.2px;
   display: block;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #FF4D4D;
   font-weight: bold;
   transition: width .3s;
 }
@@ -113,7 +118,7 @@ letter-spacing: 1.2px;
 .links:hover::after{
   width: 100%;
   font-weight: bold;
-  background-color: #fff;
+  background-color: #FF4D4D;
   transition: width .3s;
 }
 
@@ -155,11 +160,11 @@ letter-spacing: 1.2px;
 }
 
 .scrolling-active #nav-cta:hover{
-    background-color: #151515;
+    background-color: #FF4D4D;
 }
 
 .scrolling-active .nav-link::after{
-    background-color: #313131;
+    background-color: #FF4D4D;
 }
 /*
 ------------------------------
@@ -210,23 +215,38 @@ Hero Container
 
 }
 .hero-text h3{
-font-variant: small-caps;
-  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+  font-variant: small-caps;
+  font-size: calc(15px + 6 * ((100vw - 320px) / 680));
   letter-spacing: 3px;
-  font-weight: 300;
-  padding-top:20px;
-  margin-bottom: -0.3px;
+  font-weight: 400;
+  padding-top:5px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 1em;
   letter-spacing: 5px;
-  color: white;
-
-
+color:#FFF;
 }
+
 .hero-text h1{
     font-size: calc(45px + 6 * ((100vw - 320px) / 680));
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .header-text-ava{
   display: inline-flex;
+  background-color:  rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+}
+.lines {
+margin-top: 5px;
+  height: 30px;
+  width: 2px;
+  background-color:#FF4D4D;
 }
 .line1{
   margin-top: 35px;
@@ -242,6 +262,97 @@ font-variant: small-caps;
   width: 35px;
   height: 3px;
   background-color: #FF4D4D;
+}
+
+/*
+-----------------
+scroll thing
+------------------
+*/
+
+.container-chev {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 85vh;
+  left: 50vw;
+
+}
+
+.chevron {
+  position: absolute;
+  width: 18px;
+  height: 5px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
 }
 
 /*
@@ -473,8 +584,8 @@ Footer section
   width: 100%;
   background-color: #0A1418;
   z-index: 100;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left:10%;
+  padding-right: 8%;
 }
 .text{
   width: 90%;
@@ -582,7 +693,8 @@ Responsive section
 
   .stats-cont{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40%;
   }
   .stats-cont{
     padding-left: 1%;
@@ -617,7 +729,9 @@ Responsive section
 }
 
 @media (max-width:500px){
-
+.header-text-ava{
+  display: none;
+}
   p{
     font-size: 2.8vw;
   }
@@ -640,6 +754,7 @@ Responsive section
     display: flex;
     align-items: center;
     margin-top: 150px;
+    margin-right: 5%;
   }
 
 }

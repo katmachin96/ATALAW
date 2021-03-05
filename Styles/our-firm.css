@@ -80,14 +80,14 @@ letter-spacing: 1.2px;
   display: block;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #FF4D4D;
   transition: width .3s;
 }
 
 .links:hover::after{
   width: 100%;
   font-weight: bold;
-  background-color: #fff;
+  background-color:#FF4D4D;
   transition: width .3s;
 }
 .active-link {
@@ -123,7 +123,7 @@ Intro Banner
 */
 
 .Intro-banner{
-  background-image: url('../Assets/Images/banner-4.jpg');
+  background-image: url('../Assets/Images/banner-7.jpg');
   background-size: cover;
   width: 100%;
   height: 15.75em;
@@ -255,7 +255,7 @@ display: flex;
   }
   .firm-container{
     grid-template-columns: 1fr;
-    grid-template-rows: 45%;
+    grid-template-rows: 1fr 1fr;
   }
   .firm-values{
     padding-right: 10%;
@@ -265,7 +265,7 @@ display: flex;
     display: grid;
     margin-top: 2%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 30%;
+    grid-template-rows: 0.2fr 0.2fr;
 
 }
 @media (max-width:700px){
@@ -277,7 +277,7 @@ display: flex;
 @media (max-width:500px){
   .firm-container{
     grid-template-columns: 1fr;
-    grid-template-rows: 65%;
+    grid-template-rows: 1fr 1fr;
   }
 
     .firm-values{
