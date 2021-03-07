@@ -174,16 +174,24 @@ Contact info section
 
 .info{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-content: center;
 }
 
 .info-1{
   background-color: #273034;
-  padding:5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
+
+
 .info-2{
   background-color: #222B2F;
-    padding:5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+    padding-left: 10%;
 }
 
 .client-login{

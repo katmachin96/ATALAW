@@ -11,6 +11,13 @@ body{
   padding: 0;
   background-color:#0A1418;
 }
+h3{
+  font-family: 'Heebo' sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
 p{
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
@@ -149,9 +156,14 @@ Intro Banner
 }
 .firm-container{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .firm-values{
+  display: block;
+  justify-content: center;
+  text-align: center;
   width: 100%;
   height:600px;
   padding-top: 6%;
@@ -255,7 +267,9 @@ display: flex;
   }
   .firm-container{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   .firm-values{
     padding-right: 10%;
@@ -277,7 +291,9 @@ display: flex;
 @media (max-width:500px){
   .firm-container{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 10%;
+    padding-bottom: 20%;
   }
 
     .firm-values{
