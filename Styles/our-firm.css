@@ -159,6 +159,7 @@ Intro Banner
   grid-template-columns: 1fr;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 5%;
 }
 .firm-values{
   display: block;
@@ -204,6 +205,7 @@ Footer section
   z-index: 100;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 20%;
 }
 .text{
   width: 90%;

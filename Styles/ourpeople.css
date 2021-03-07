@@ -295,7 +295,7 @@ display: flex;
     grid-template-columns: 1fr;
     grid-template-rows: 300px 500px;
     grid-gap: 30px;
-    margin-bottom: 50px;
+      margin-bottom: 90vh;
   }
   .contact2{
     display: grid;
@@ -303,6 +303,7 @@ display: flex;
     grid-template-rows: 300px 500px;
     grid-gap: 30px;
     margin-bottom: 50px;
+      margin-bottom: 90vh;
   }
 }
 
