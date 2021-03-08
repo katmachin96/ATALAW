@@ -736,17 +736,17 @@ height: 850px;
 
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
 .header-text-ava{
   display: none;
 }
   p{
-    font-size: 3vw;
+    font-size: calc(13px + 6 * ((100vw - 320px) / 680));
   }
   .stats-cont{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% 40%;
+    grid-template-rows: 1fr 1fr;
   }
   .stats-cont h4{
     font-size: calc(13px + 6 * ((100vw - 320px) / 680));

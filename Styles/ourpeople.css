@@ -197,7 +197,7 @@ p{
 
 .educ{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
   grid-gap: 13px;
 }
@@ -208,11 +208,11 @@ Footer section
 ------------------------------
  */
  footer{
-   height: 300px;
+
+
  }
  .footer-nav{
    display:inline-flex;
-   bottom: 0;
    height:100px;
    width: 100%;
    background-color: #0A1418;
@@ -249,7 +249,7 @@ Footer section
 
 @media (max-width:800px){
   footer{
- margin-top: 80%;
+ margin-top: 10%;
   }
   .links:hover::after{
     width: 0%;
@@ -287,8 +287,11 @@ display: flex;
   }
   .ourppl-Container{
     height: 90vh;
+    grid-template-rows: 1fr 1fr 0.25;
     grid-row-gap: 5px;
     margin-bottom: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .contact1{
@@ -300,12 +303,11 @@ display: flex;
   }
   .contact2{
     display: grid;
-    height: 1200px;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2fr;
     grid-gap: 30px;
     margin-bottom: 50px;
-      margin-bottom: 50vh;
+
   }
 }
 
