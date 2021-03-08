@@ -149,8 +149,9 @@ Intro Banner
 }
 
 .ourppl-Container{
+  position: relative;
   height: 1100px;
-  display: grid;
+  display: block;
   margin-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
@@ -207,42 +208,41 @@ Footer section
 ------------------------------
  */
  footer{
-margin-top: 20%;
+   height: 300px;
  }
-.footer-nav{
-  display:inline-flex;
-  bottom: 0;
-  height:100px;
-  width: 100%;
-  background-color: #0A1418;
-  z-index: 100;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.text{
-  width: 90%;
-  height: 50px;
-  display: flex;
-  align-self: flex-start;
-  margin-top: 50px;
-  color: grey;
-}
-.icons{
-  width: auto;
-  height:30px;
-  margin-left: 5px;
-}
+ .footer-nav{
+   display:inline-flex;
+   bottom: 0;
+   height:100px;
+   width: 100%;
+   background-color: #0A1418;
+   z-index: 100;
+   padding-left:10%;
+   padding-right: 8%;
+ }
+ .text{
+   width: 90%;
+   height: 50px;
+   display: flex;
+   align-self: flex-start;
+   margin-top: 50px;
+   color: grey;
+ }
+ .icons{
+   width: auto;
+   height:30px;
+   margin-left: 5px;
+ }
 
-.social-icons{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-self: flex-end;
-}
+ .social-icons{
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-self: flex-end;
+ }
 
 @media (max-width:900px){
   .ourppl-Container{
-    grid-template-rows: 550px 750px;
     grid-row-gap: 5px;
   }
 }
@@ -286,29 +286,31 @@ margin-top: 20%;
 display: flex;
   }
   .ourppl-Container{
-    grid-template-rows: 850px 1150px;
+    height: 90vh;
     grid-row-gap: 5px;
+    margin-bottom: 30%;
   }
 
   .contact1{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 500px;
+    grid-template-rows: 0.5fr 2fr;
     grid-gap: 30px;
-      margin-bottom: 90vh;
+      margin-bottom: 5vh;
   }
   .contact2{
     display: grid;
+    height: 1200px;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 500px;
+    grid-template-rows: 0.5fr 2fr;
     grid-gap: 30px;
     margin-bottom: 50px;
-      margin-bottom: 90vh;
+      margin-bottom: 50vh;
   }
 }
 
 @media (max-width:650px){
   footer{
- display: none;
+display: none;
   }
 }
