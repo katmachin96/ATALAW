@@ -146,11 +146,11 @@ Intro Banner
   bottom: 65%;
   position:absolute;
   height: 30px;
-  border-left: 5px solid red;
+  border-left: 5px solid #FF4D4D;
   width: 100%;
 }
 .text-banner h2{
-  font-family: 'Fjalla One', cursive;
+  font-family: 'Fjalla One', sans-serif;
   letter-spacing: 4px;
   color: white;
   padding-left: 1%;

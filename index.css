@@ -447,7 +447,7 @@ Our practice section
   display: flex;
   font-size: 20px;
   padding-right: 15px;
-  font-family: 'Fjalla One', cursive;
+  font-family: 'Fjalla One',sans-serif;
   letter-spacing: 3px;
 
 }
