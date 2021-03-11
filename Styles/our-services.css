@@ -55,13 +55,12 @@ header{
   display: flex;
   flex: start;
   height: 50px;
-  padding-left:  15%;
+  padding-left:  5%;
 }
 
 .logo img{
-  margin-top: 10px;
   width:auto;
-  height:25px;
+  height:45px;
 
 
 }

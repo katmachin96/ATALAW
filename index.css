@@ -63,24 +63,27 @@ NAV BAR
 
 .navbar{
   width: 100%;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
   /* background-color:#0A1418; */
   color: grey;
   padding-right: 1.5rem;
-  padding-left: 5%;
+
 
 }
 .logo{
   display: flex;
   flex: start;
+  z-index: 1000;
+  padding-left: 5%;
 }
 
 .logo img{
   width:auto;
-  height:25px;
+  height:45px;
+
 }
 
 .navbar-links ul{
@@ -127,7 +130,7 @@ letter-spacing: 1.2px;
 
 .toggle-button{
   position: absolute;
-  top:0.75rem;
+  top:1rem;
   right:1.75rem;
   display: none;
   flex-direction: column;

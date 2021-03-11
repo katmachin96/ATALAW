@@ -37,17 +37,15 @@ header{
   z-index: 10;
 }
 .logo{
-  padding-left:  15%;
+  padding-left:5%;
   display: flex;
   flex: start;
   height: 50px;
 }
 
 .logo img{
-
-  margin-top: 10px;
   width:auto;
-  height:25px;
+  height:45px;
 }
 .links::after{
   content: '';
